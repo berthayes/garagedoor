@@ -1,0 +1,19 @@
+{
+    "name": "HttpSinkConnector_0",
+    "config": {
+      "topics": "pageme",
+      "input.data.format": "JSON",
+      "connector.class": "HttpSink",
+      "name": "HttpSinkConnector_0",
+      "kafka.auth.mode": "KAFKA_API_KEY",
+      "http.api.url": "https://api.twilio.com/2010-04-01/Accounts/AC36049540a09e392533d156c253d94736/Messages.json",
+      "request.method": "POST",
+      "headers": "Content-Type: application/x-www-form-urlencoded",
+      "request.body.format": "string",
+      "auth.type": "BASIC",
+      "connection.user": "AC36049540a09e392533d156c253d94736",
+      "max.retries": "3",
+      "https.ssl.protocol": "TLSv1.2",
+      "tasks.max": "1"
+    }
+  }
